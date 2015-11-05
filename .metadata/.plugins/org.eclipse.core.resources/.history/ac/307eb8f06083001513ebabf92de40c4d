@@ -33,7 +33,7 @@ public class TestFileAPI {
 		assertTrue(file.isFile());
 	}
 	
-	@Test
+	@test
 	public void testCanExecute1() {
 		assertTrue(directory.canExecute());
 	}
@@ -58,37 +58,37 @@ public class TestFileAPI {
 	
 	@Test
 	public void testGetAbsolutePath() {
-		assertEquals("", readOnlyFile.getAbsolutePath());
+		assertEquals("xxxxxxx", readOnlyFile.getAbsolutePath());
 	}
 	
 	@Test
 	public void testGetCanonicalPath() throws Exception {
-		assertEquals("", readOnlyFile.getCanonicalPath());
+		assertEquals("xxxxxxx", readOnlyFile.getCanonicalPath());
 	}
 	
 	@Test
 	public void testGetParent1() {
-		assertEquals("", directory.getParent());
+		assertEquals("xxxxxx", directory.getParent());
 	}
 
 	@Test
 	public void testGetParent2() {
-		assertEquals("", readOnlyFile.getParent());
+		assertEquals("xxxxxx", readOnlyFile.getParent());
 	}
 
 	@Test
 	public void testGetPath() {
-		assertEquals("", readOnlyFile.getPath());
+		assertEquals("xxxxxx", readOnlyFile.getPath());
 	}
 	
 	@Test 
 	public void testGetName() {
-		assertEquals("",readOnlyFile.getName());
+		assertEquals("xxxxxx",readOnlyFile.getName());
 	}
 	
 	@Test
 	public void testToString() {
-		assertEquals("",directory.toString());
+		assertEquals("xxxxxx",directory.toString());
 	}
 	
 	@Test
